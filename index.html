@@ -9,7 +9,27 @@
 
     </head>
     <body>
-        <script src="gyronorm.js/dist/gyronorm.complete.min.js"></script>
+        
+        <h1>
+            Demoing the game concept
+        </h1>
+        <h2>
+            Testing accelerometer data
+        </h2>
+        <p id="absoluteval">absolute: Value</p>
+        <p id="xval">x: Value</p>
+        <p id="yval">y: Value</p>
+        <p id="zval">z: Value</p>
+        
+        <h2>EVENT TYPE</h2>
+        <p id="eType">type</p>
+
+        <p id="xaccel">x</p>
+        <p id="yaccel">y</p>
+        <p id="zaccel">z</p>
+
+    </body>
+    <script src="gyronorm.js/dist/gyronorm.complete.min.js"></script>
         <script src="js/game.js"></script>
         <script src="https://connect.facebook.net/en_US/fbinstant.6.2.js"></script>
         <script>
@@ -43,23 +63,4 @@
             window.addEventListener("devicemotion", handleMotionEvent, true);
 
         </script>
-        <h1>
-            Demoing the game concept
-        </h1>
-        <h2>
-            Testing accelerometer data
-        </h2>
-        <p id="absoluteval">absolute: Value</p>
-        <p id="xval">x: Value</p>
-        <p id="yval">y: Value</p>
-        <p id="zval">z: Value</p>
-        
-        <h2>EVENT TYPE</h2>
-        <p id="eType">type</p>
-
-        <p id="xaccel">x</p>
-        <p id="yaccel">y</p>
-        <p id="zaccel">z</p>
-
-    </body>
 </html>

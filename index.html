@@ -13,20 +13,7 @@
         <script src="js/game.js"></script>
         <script src="https://connect.facebook.net/en_US/fbinstant.6.2.js"></script>
         <script>
-            IMAGES = ['test_img']
-            var preloaded = {};
-            window.onload = function(){
-                FBInstant.initializeAsync().then(function(){
-                  //  IMAGES.array.forEach(function(imgName, index) {
-                    //    var img = new Image();
-                      //  img.src = './img/' + imgName + '.png';
-                       // preloaded[imgName] = img;
-                       // FBInstant.setLoadingProgress(Math.ceil(index / IMAGES.length) * 100 );
-                    //})
-
-                    // Finished Loading the game
-                })
-            }
+            
             
             var gn = new GyroNorm();
             gn.init().then(function(){

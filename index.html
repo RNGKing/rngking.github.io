@@ -39,7 +39,7 @@
                 document.getElementById("xaccel").innerHTML = "x accel" + event.accelerationIncludingGravity.x;
                 document.getElementById("yaccel").innerHTML = "y accel" + event.accelerationIncludingGravity.y;
                 document.getElementById("zaccel").innerHTML = "z accel" + event.accelerationIncludingGravity.z;
-
+                document.getElementById("eType").innerHTML = "type : " + event.type;
             }
 
             window.addEventListener("deviceorientation", handleOrientation, true);
@@ -57,6 +57,9 @@
         <p id="yval">y: Value</p>
         <p id="zval">z: Value</p>
         
+        <h2>EVENT TYPE</h2>
+        <p id="eType">type</p>
+
         <p id="xaccel">x</p>
         <p id="yaccel">y</p>
         <p id="zaccel">z</p>

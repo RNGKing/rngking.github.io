@@ -9,6 +9,7 @@
 
     </head>
     <body>
+        <script src="gyronorm.js/dist/gyronorm.complete.min.js"></script>
         <script src="js/game.js"></script>
         <script src="https://connect.facebook.net/en_US/fbinstant.6.2.js"></script>
         <script>
@@ -27,6 +28,14 @@
                 })
             }
             
+            var gn = new GyroNorm();
+            gn.init().then(function(){
+                gn.start(function(data){
+                    document.getElementById("xaccel").innerHTML = "x-accel : " + data.dm.x;
+                    document.getElementById("yaccel").innerHTML = "x-accel : " + data.dm.y;
+                    document.getElementById("zaccel").innerHTML = "x-accel : " + data.dm.z;
+                })
+            })
 
             function handleOrientation(event){
                 document.getElementById("absoluteval").innerHTML = "absolute : " + event.absolute;

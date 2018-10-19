@@ -31,9 +31,16 @@
 
             function handleOrientation(event){
                 document.getElementById("absoluteval").innerHTML = "absolute : " + event.absolute;
-                document.getElementById("zval").innerHTML    = event.alpha;
-                document.getElementById("xval").innerHTML     = event.beta;
-                document.getElementById("yval").innerHTML   = event.gamma;
+                document.getElementById("zval").innerHTML    = "z : " + event.alpha;
+                document.getElementById("xval").innerHTML     = "x : " + event.beta;
+                document.getElementById("yval").innerHTML   = "y : " + event.gamma;
+            }
+
+            function handMotion(event){
+                document.getElementById("xaccel").innerHTML = "x accel" + event.acceleration.x;
+                document.getElementById("yaccel").innerHTML = "y accel" + event.acceleration.y;
+                document.getElementById("zaccel").innerHTML = "z accel" + event.acceleration.z;
+
             }
         </script>
         <h1>
@@ -46,6 +53,10 @@
         <p id="xval">x: Value</p>
         <p id="yval">y: Value</p>
         <p id="zval">z: Value</p>
+        <br>
+        <p id="xaccel"></p>
+        <p id="yaccel"></p>
+        <p id="zaccel"></p>
 
     </body>
 </html>

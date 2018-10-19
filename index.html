@@ -37,9 +37,9 @@
             }
 
             function handMotionEvent(event){
-                document.getElementById("xaccel").innerHTML = "x accel" + event.acceleration.x;
-                document.getElementById("yaccel").innerHTML = "y accel" + event.acceleration.y;
-                document.getElementById("zaccel").innerHTML = "z accel" + event.acceleration.z;
+                document.getElementById("xaccel").innerHTML = "x accel" + event.accelerationIncludingGravity.x;
+                document.getElementById("yaccel").innerHTML = "y accel" + event.accelerationIncludingGravity.y;
+                document.getElementById("zaccel").innerHTML = "z accel" + event.accelerationIncludingGravity.z;
 
             }
         </script>
